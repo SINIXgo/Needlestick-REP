@@ -137,7 +137,11 @@ class StoryMenuState extends MusicBeatState
 			weekCharacterThing.y += 70;
 			grpWeekCharacters.add(weekCharacterThing);
 		}
+#if android
 
+                addVirtualPad(NONE, A_B);
+
+                #end
 		difficultySelectors = new FlxGroup();
 		//add(difficultySelectors);
 
