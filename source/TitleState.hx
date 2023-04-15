@@ -59,6 +59,10 @@ class TitleState extends MusicBeatState
 	public static var volumeUpKeys:Array<FlxKey> = [FlxKey.NUMPADPLUS, FlxKey.PLUS];
 
 	public static var initialized:Bool = false;
+	
+#if android
+		FlxG.android.preventDefaultKeys = [BACK];
+		#end
 
 	var blackScreen:FlxSprite;
 	var credGroup:FlxGroup;
