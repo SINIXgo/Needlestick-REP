@@ -191,7 +191,13 @@ class CreditsState extends MusicBeatState
 		changeSelection();
 		super.create();
 	}
+#if android
 
+                addVirtualPad(UP_DOWN, A);
+
+                addPadCamera();
+
+                #end
 	var quitting:Bool = false;
 	var holdTime:Float = 0;
 	override function update(elapsed:Float)
