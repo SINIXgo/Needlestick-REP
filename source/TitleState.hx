@@ -61,7 +61,7 @@ class TitleState extends MusicBeatState
 	public static var initialized:Bool = false;
 	
 #if android
-		FlxG.android.preventDefaultKeys = [BACK];}
+		FlxG.android.preventDefaultKeys = [BACK];
 		#end
 
 	var blackScreen:FlxSprite;
