@@ -14,7 +14,17 @@ import flixel.util.FlxGradient;
 import flixel.FlxState;
 import flixel.FlxCamera;
 import flixel.FlxBasic;
+#if android
 
+import android.AndroidControls;
+
+import android.flixel.FlxVirtualPad;
+
+import flixel.input.actions.FlxActionInput;
+
+import flixel.util.FlxDestroyUtil;
+
+#end
 class MusicBeatState extends FlxUIState
 {
 	private var curSection:Int = 0;
