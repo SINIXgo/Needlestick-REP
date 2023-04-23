@@ -3058,7 +3058,7 @@ class FunkinLua {
 	}
 
 	// some fuckery fucks with linc_luajit
-	functionetResult(l:State, result:Int):Any {
+	function gtResult(l:State, result:Int):Any {
 		var ret:Any = null;
 
 		switch(Lua.type(l, result)) {
