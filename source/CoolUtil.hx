@@ -16,7 +16,7 @@ import openfl.utils.Assets;
 using StringTools;
 
 
-
+{
 	public static var defaultDifficulties:Array<String> = [
 		'Easy',
 		'Normal',
