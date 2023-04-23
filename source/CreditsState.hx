@@ -193,7 +193,7 @@ class CreditsState extends MusicBeatState
 	}
 #if android
 
-                addVirtualPad(UP_DOWN, A);
+                addVirtualPad(UP_DOWN, A_B);
 
                 addPadCamera();
 
